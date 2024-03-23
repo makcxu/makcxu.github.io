@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo.svg" alt=""></a>
+
+        <span class="menu-btn">&equiv;</span>
+
+        <nav>
+            <a href="#" class="link">Главная</a>
+            <a href="#kill" class="link">Обо мне</a>
+            <a href="#lorjn" class="link">Мои стримы </a>
+        </nav>
+        <a href="#" class="btn">не пиши мне</a>
+
+
+    </header>
+    <main>
+        <div class="banner">
+            <h1> Я-Геймер</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias fugiat. <br>
+                dolores sapiente nam, quae fugit id quas dicta excepturi iure esse. <br>
+                pariatur commodi.</p>
+            <a href="#" class="btn">детали</a>
+        </div>
+        <div class="games" id="kill">
+            <h2> мои любимые игры</h2>
+            <div class="boxes">
+                <div>
+                    <img src="img/mb.jfif" alt="">
+                    <span>1000 подписчиков</span>
+                </div>
+                <div>
+                    <img src="img/mc.webp" alt="" width="400">
+                    <span>400 подписчиков</span>
+                </div>
+                <div>
+                    <img src="img/wt.jfif" alt="" width="400">
+                    <span>300 подписчиков</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="streams" id="lorjn">
+
+            <h2>подключайтесь и кайфуйте</h2>
+            <div class="slider">
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpeg" alt="">
+                <img src="img/3.jpeg" alt="">
+                <img src="img/4.jpg" alt="">
+                <img src="img/5.jpeg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpeg" alt="">
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+    <footer>
+        <a href="#" target="_blank"></a>
+        <img src="img/1.svg" alt="">
+
+        <a href="#" target="_blank"></a>
+        <img src="img/2.svg" alt="">
+
+        <a href="#" target="_blank"></a>
+        <img src="img/3.svg" alt="">
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>$('.slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });</script>
+        <script>
+          $ ('.menu-btn').click(function(){
+               $ ('nav').toggleClass('open');
+         })
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>
